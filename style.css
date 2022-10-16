@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    background: url("./images/background.webp");
+    background-size: cover;
+    min-height: 100vh;
+
+    background-repeat: no-repeat;
+}
+
+/* step 1 */
+.step_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    font-weight: 800;
+    margin-top: 100px;
+}
+
+.desc {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.overlay {
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.two_box {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box_1 {
+    width: 370px;
+    height: 180px;
+
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 1s ease all;
+    border: 2px solid #1a88e5;
+    background: #1a8ae541;
+
+}
+
+.box_1:hover {
+    border: 2px solid white;
+    background: #1a88e5;
+}
+
+.img_class {
+    width: 120px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.img_class1 {
+    width: 140px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.mt_minus {
+    margin-top: -10px;
+    color: white;
+    font-size: 20px;
+}
+
+.text-pr {
+    color: #1a88e5;
+}
+
+.request_ev {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.w_full {
+    width: 50%;
+}
+
+.hide_this {
+    display: none;
+}
+
+.step_back {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    width: 55%;
+    padding: 15px 0;
+    border: 2px solid #1a88e5;
+    background: #1a8ae541;
+    border-radius: 10px;
+    transition: 1s ease all;
+}
+
+.step_back2 {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    width: 55%;
+    padding: 15px 0;
+    border: 2px solid #1a88e5;
+    background: #1a88e5;
+    border-radius: 10px;
+    transition: 1s ease all;
+}
+
+.input {
+    width: 55%;
+    padding: 15px;
+    background: white;
+    margin-bottom: 30px;
+}
+
+.input2 {
+    width: 100%;
+    padding: 15px;
+    background: white;
+    margin-bottom: 30px;
+}
+
+.iti {
+    width: 55%;
+
+    background: white;
+    margin-bottom: 30px;
+
+
+}
+
+#phone {
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    padding-left: 70px;
+}
+
+.grid-2 {
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.iti__flag-container {
+    padding: 15px !important;
+}
+
+.step_back:hover {
+    background: #1a88e5;
+}
+
+.progress_margin {
+    margin-top: 320px;
+}
+
+.pb_something {
+    padding-bottom: 10px;
+}
+
+.close1 {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid #1a88e5;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    transition: .3s ease linear;
+}
+.close1:hover{
+    background: #1a88e5;
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        text-align: center;
+        font-size: 36px;
+        color: white;
+        font-weight: 800;
+        margin-top: 100px;
+
+    }
+
+    .box_1 {
+        width: 155px;
+        height: 130px;
+
+        border-radius: 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 1s ease all;
+        border: 2px solid #1a88e5;
+        background: #1a8ae534;
+
+    }
+
+    .desc {
+        padding: 0 10px;
+        color: white;
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .request_ev {
+
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .progress_margin {
+        margin-top: 150px;
+    }
+
+    .w_full {
+        width: 90%;
+    }
+
+    .input {
+        width: 90%;
+        padding: 15px;
+        background: white;
+        margin-bottom: 30px;
+    }
+
+    .grid-2 {
+        width: 90%;
+        gap: 10px;
+    }
+
+    .input2 {
+        width: 100%;
+        padding: 15px;
+        background: white;
+        margin-bottom: 30px;
+    }
+
+    .iti {
+        width: 89%;
+    }
+
+    .step_back2 {
+        width: 90%;
+    }
+}
